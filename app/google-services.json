@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "735158671487",
+    "firebase_url": "https://turnos-virtuales.firebaseio.com",
+    "project_id": "turnos-virtuales",
+    "storage_bucket": "turnos-virtuales.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735158671487:android:95f34e6f523ef387",
+        "android_client_info": {
+          "package_name": "com.example.anger.pruebafirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735158671487-8e1o7kd9tdn81n7o62539ke1ei6blc5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVJo1WJOYcu0VL745dFRqbVWRXLX4X3mM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
