@@ -14,17 +14,32 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:orientation="vertical"
+        android:gravity="center"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="170dp">
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/txtTurno"
             android:layout_width="wrap_content"
             android:layout_height="14dp"
-            android:text="TURNO"
+            android:text="TURNO NEGOCIOS"
             tools:layout_editor_absoluteX="32dp"
             tools:layout_editor_absoluteY="69dp" />
+        <TextView
+            android:id="@+id/txtEspacio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="128dp" />
 
+        <TextView
+            android:id="@+id/txtLevelId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id Turno "
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="128dp" />
 
         <TextView
             android:id="@+id/txtId"
@@ -32,21 +47,6 @@
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="78dp"
             tools:layout_editor_absoluteY="101dp" />
-
-        <TextView
-            android:id="@+id/txtLevelNo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No. Turno: "
-            tools:layout_editor_absoluteX="32dp"
-            tools:layout_editor_absoluteY="128dp" />
-
-        <TextView
-            android:id="@+id/txtNo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="114dp"
-            tools:layout_editor_absoluteY="127dp" />
 
         <TextView
             android:id="@+id/txtLevelFecha"
@@ -63,20 +63,54 @@
             tools:layout_editor_absoluteX="87dp"
             tools:layout_editor_absoluteY="194dp" />
 
+
         <TextView
             android:id="@+id/txtLevelHora"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hora:"
+            android:text="Turno apartado a las:"
             tools:layout_editor_absoluteX="32dp"
-            tools:layout_editor_absoluteY="158dp" />
+            tools:layout_editor_absoluteY="194dp" />
 
         <TextView
             android:id="@+id/txtHora"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="87dp"
-            tools:layout_editor_absoluteY="158dp" />
+            tools:layout_editor_absoluteY="194dp" />
+
+        <TextView
+            android:id="@+id/txtLevelNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. Turno: "
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="128dp" />
+
+        <TextView
+            android:id="@+id/txtNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="127dp" />
+
+
+
+        <TextView
+            android:id="@+id/txtLevelUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de Usuario:"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <TextView
+            android:id="@+id/txtUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="194dp" />
+
 
         <TextView
             android:id="@+id/txtLevelNegocio"
@@ -93,32 +127,80 @@
             tools:layout_editor_absoluteX="114dp"
             tools:layout_editor_absoluteY="226dp" />
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="170dp">
-
-        <Button
-            android:id="@+id/btnRegistro"
+        <TextView
+            android:id="@+id/txtLevelPresente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registrarse"
-            tools:layout_editor_absoluteX="78dp"
-            tools:layout_editor_absoluteY="281dp" />
+            android:text="Cliente presente:"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <TextView
+            android:id="@+id/txtPresente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <TextView
+            android:id="@+id/txtLevelActivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turno activo:"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <TextView
+            android:id="@+id/txtActivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <TextView
+            android:id="@+id/txtLevelTipoS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de atencion:"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <TextView
+            android:id="@+id/txtTipoS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <TextView
+            android:id="@+id/txtLevelTiempoE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiempo de espera promedio:"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <TextView
+            android:id="@+id/txtTiempoE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check In" />
 
         <Button
             android:id="@+id/btnCancelar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cancelar Turno" />
+            android:text="Cancelar"
+            android:onClick="metodoCancelar"/>
 
-        </LinearLayout>
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

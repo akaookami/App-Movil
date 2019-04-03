@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.anger.pruebafirebase">
     <uses-permission android:name="android.permission.NFC"/>
-    <uses-sdk android:minSdkVersion="10"/>
+
     <!--Esto es para que la aplicacion solo aparezca para las personas que
     tienen NFC en su celular-->
     <uses-feature android:name="android.hardware.nfc" android:required="true" />

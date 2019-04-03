@@ -35,6 +35,5 @@
             android:text="Donde?"
             tools:layout_editor_absoluteX="81dp"
             tools:layout_editor_absoluteY="16dp" />
-
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
